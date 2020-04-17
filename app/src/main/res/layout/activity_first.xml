@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <ImageView
+        android:id="@+id/orangehalfbt"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
+        android:background="#e9e9e9"
+        android:scaleType="fitStart"
+        android:src="@drawable/ellipse_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/hamburgerbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_con" />
+
+    <ImageButton
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:text="님 안녕하세요 !"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+        <ViewFlipper
+            android:layout_width="400dp"
+            android:layout_height="300dp">
+
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:src="@drawable/rounded_rectangle_3"
+                app:layout_constraintEnd_toEndOf="@+id/img3"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="111dp"
+                android:layout_height="70dp"
+                android:src="@drawable/rounded_rectangle_1"
+                app:layout_constraintEnd_toEndOf="@+id/img1"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:src="@drawable/rounded_rectangle_2"
+                app:layout_constraintEnd_toEndOf="@+id/img2"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+        </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
